@@ -1,0 +1,290 @@
+/* Reset  ----------------------------------------------------------------------*/
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+
+
+/* Basic Elements  ----------------------------------------------------------------------*/
+   
+html, body {
+	background: #252525;
+    color: #e1e1e1;
+    line-height: 1;
+    font: 13px "Arial", "Trebuchet MS", "Lucinda Sans Unicode", "Arial", sans-serif;
+}
+
+a:link, a:visited {
+    color: #008ed4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #008ed4;
+    text-decoration: none;
+    font-weight: bold;
+}
+        
+ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+#spending-status {
+  float: left;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 20px 25px;
+  background: #333;
+  -webkit-box-sizing: border-box;
+}
+
+#spending-list {
+  float: left;
+  width: 100%;
+}
+
+#spending-status label {
+  display: block;
+}
+
+#monthly-budget {
+  background: none;
+  border: 1px solid #333;
+  border-bottom: 1px solid #555;
+  color: #909090;
+  font-size: 1.2em;
+  outline: none;
+  padding: 10px 5px;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  border-radius: 0;
+}
+
+#add-new-item,
+#item-title {
+  background: none;
+  outline: none;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+  width: 50%;
+  float: left;
+  margin: 0;
+  font-size: 1.2em;
+  border: none;
+  color: #777;
+  -webkit-box-sizing: border-box;
+}
+
+#add-new-item {
+  width: 40%;
+}
+
+#item-title {
+  width: 60%;
+}
+
+#item-title {
+  border-left: 1px dotted #444;
+}
+
+#add-new-item.error,
+#add-new-item.error:focus {
+  color: red;
+}
+
+#new-item-form {
+  margin: 0;
+}
+#new-item-form input[type=submit]{
+  display: none;
+}
+
+#monthly-budget:focus {
+  background: #222;
+  border: 1px solid #777;
+  color: #FFF;
+}
+
+::-webkit-input-placeholder {
+  color: #555;
+  font-style: italic;
+}
+
+#add-new-item:focus {
+  color: white;
+}
+
+.status-count {
+  font-size: 4em;
+  color: white;
+}
+
+.status-count strong {
+  float: right;
+  font-size: .3em;
+  margin-top: 7px;
+  color: #707070;
+  font-weight: normal;
+}
+
+#loading-state {
+  text-align: center;
+  padding: 30px 0;
+  width: 100%;
+}
+
+#loading-state img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+}
+
+#status-bar {
+  margin: 15px 0 30px 0;
+  display: block;
+  height: 4px;
+  background: #222;
+}
+
+#status-bar-percentage {
+  display: block;
+  background: #1a7ed3;
+  width: 40%;
+  height: 4px;
+}
+
+#status-bar.over #status-bar-percentage {
+  background: #aa3320;
+}
+
+
+#spending-list li {
+  display: block;
+  overflow: hidden;
+  font-size: 1.5em;
+  padding: 0;
+  border-bottom: 1px dotted #444;
+}
+
+.spent-amount {
+  float: left;
+  width: 40%;
+  padding: 15px 20px;
+  -webkit-box-sizing: border-box;
+}
+
+.spent-title {
+  float: right;
+  color: #909090;
+  padding: 15px 20px;
+  background: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  border: none;
+  color: #777;
+  width: 60%;
+  font-size: .8em;
+}
+
+#spending-list.empty #zero-state {
+  padding: 30px 50px;
+  text-align: center;
+  color: #606060;
+  border: none;
+  font-size: 1.2em;
+}
+
+#spending-list #zero-state {
+  display: none;
+}
+
+#spending-list.loading #default-state{
+  display: none;
+}
+
+#spending-list #default-state{
+  display: block;
+}
+
+#spending-list #loading-state{
+  display: none;
+}
+
+#spending-list.loading #loading-state{
+  display: block;
+}
+
+/* Media Queries----------------------------------------------------*/
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 600px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+  #spending-status {
+    width: 30%;
+  }
+  
+  #spending-list {
+    width: 70%;
+  }
+  
+  
+  #spending-list li {
+    font-size: 1.4em;
+  }
+  
+  #add-new-item,
+  #item-title {
+    padding: 10px 25px;
+    font-size: 1em;
+  }
+  
+  .spent-amount {
+    padding: 15px 0 15px 30px;
+  }
+  
+  .spent-title {
+    padding: 15px 30px;
+  }
+  
+  .status-count strong {
+    float: none;
+    display: block;
+    font-size: .2em;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 980px) {    
+
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+/* iPhone 4 ----------------------------------------------*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2){

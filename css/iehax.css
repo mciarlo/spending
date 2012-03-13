@@ -1,0 +1,104 @@
+/*
+Theme Name: 
+Theme URI: 
+Description: A clean style with my favorite elements: simplicity and creativity.
+Version: 1.0
+Author: Michael Ciarlo
+Author URI: http://www.mciarlo.com/
+
+----------------------------------------------------------------------*/
+
+/* Reset 
+----------------------------------------------------------------------*/
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+
+/* @end
+----------------------------------------------------------------------*/
+
+/* Basic Elements 
+----------------------------------------------------------------------*/
+   
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background: #fffaea;
+    color: #000;
+    height: 100%;
+    font: 13px "Corbel", "Trebuchet MS", "Lucinda Sans Unicode", "Arial", sans-serif;
+    line-height: 1.5;
+}
+
+a:link, a:visited {
+    color: #008ed4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #008ed4;
+    text-decoration: underline;
+    font-weight: bold;
+}
+        
+ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+/* @end
+----------------------------------------------------------------------*/
+
+/* Generic Classes 
+----------------------------------------------------------------------*/
+
+.clear {
+    clear: both;
+}
+
+img {
+    border: none;
+}
+    
+/* @end
+----------------------------------------------------------------------*/
+
+/* Basic Layout 
+----------------------------------------------------------------------*/
+
+#wrapper {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+/* @end
+----------------------------------------------------------------------*/
+
+/* Header 
+----------------------------------------------------------------------*/
+
+
+/* @end
+----------------------------------------------------------------------*/
+
+/* Content 
+----------------------------------------------------------------------*/
+
+/* @end
+----------------------------------------------------------------------*/
+
+/* Footer 
+----------------------------------------------------------------------*/

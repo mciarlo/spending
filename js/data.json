@@ -1,0 +1,13 @@
+{
+  "budget": 120,
+  "entries": [
+    {
+      "cost"  : 12,
+      "title" : "Lasagna"
+    },
+    {
+      "cost"  : 21,
+      "title" : "Walgreens"
+    }
+  ]
+}

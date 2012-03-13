@@ -34,7 +34,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'gunicorn',
     'main',
+    'accounts',
 )
+
+AUTH_PROFILE_MODULE = 'accounts.UserProfile'
 
 ROOT_URLCONF = 'main.urls'
 

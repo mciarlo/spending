@@ -15,6 +15,7 @@ v1_api.register(resources.EntryResource())
 
 urlpatterns = patterns('',
     url('^$', views.index, name='index'),
+    url('^login/?$', views.custom_login, name='login'),
     ('^api/', include(v1_api.urls)),
 )
 

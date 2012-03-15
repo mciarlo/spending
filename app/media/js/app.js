@@ -35,7 +35,7 @@ $(function () {
   
   loadData = function () {
     $.ajax({
-      url: 'js/data.json',
+      url: '/media/js/data.json',
       dataType: 'json',
   		type: 'GET',
       success: function (data) {

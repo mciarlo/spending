@@ -19,9 +19,9 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.Loader',
 )
 
-STATIC_URL = '/static/'
+STATIC_URL = '/media/'
 STATICFILES_DIRS = (
-    os.path.join(APP_DIR, 'static'),
+    os.path.join(APP_DIR, 'media'),
 )
 
 LOGIN_URL = '/login/'

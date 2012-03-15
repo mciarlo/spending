@@ -12,7 +12,12 @@ class UserResource(ModelResource):
         authentication = Authentication()
         authorization = Authorization()
         queryset = User.objects.all()
-        resource_name = 'user'
+        list_allowed_methods = ['get', 'put']
+
+
+    def apply_authorization_limits(self, request, object_list):
+        return object_list.filter(user=request.user)
+        
 
 
 class MonthlyBudgetResource(ModelResource):
@@ -20,12 +25,24 @@ class MonthlyBudgetResource(ModelResource):
         authentication = Authentication()
         authorization = Authorization()
         queryset = models.MonthlyBudget.objects.all()
-        resource_name = 'budget'
+
+    def obj_create(self, bundle, request=None, **kwargs):
+        return super(MonthlyBudgetResource, self).obj_create(
+            bundle, request, user=request.user)
+
+    def apply_authorization_limits(self, request, object_list):
+        return object_list.filter(user=request.user)
 
 
-class SpendingEntryResource(ModelResource):
+class EntryResource(ModelResource):
     class Meta:
         authentication = Authentication()
         authorization = Authorization()
-        queryset = models.SpendingEntry.objects.all()
-        resource_name = 'spending_entry'
+        queryset = models.Entry.objects.all()
+
+    def obj_create(self, bundle, request=None, **kwargs):
+        return super(MonthlyBudgetResource, self).obj_create(
+            bundle, request, user=request.user)
+
+    def apply_authorization_limits(self, request, object_list):
+        return object_list.filter(user=request.user)
